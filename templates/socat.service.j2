@@ -1,0 +1,9 @@
+[Unit]
+Description=socat tunnel service {{ socat_service_name }}
+After=network.target
+
+[Service]
+ExecStart=socat {{ socat_command }}
+
+[Install]
+WantedBy=multi-user.target
