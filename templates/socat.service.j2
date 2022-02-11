@@ -1,8 +1,10 @@
 [Unit]
 Description=socat tunnel service {{ socat_service_name }}
-After=network.target
+After=network-online.target
+Wants=network-online.target
 
 [Service]
+Type=forking
 ExecStart=socat {{ socat_command }}
 
 [Install]
