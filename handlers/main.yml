@@ -6,5 +6,5 @@
     daemon_reload: yes
     state: restarted
     enabled: True
-    name: "socat-{{socat_service_name}}"
+    name: "socat-{{ socat_service_name }}"
   listen: 'installed socat'
