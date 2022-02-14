@@ -2,12 +2,12 @@
 - name: Variable check {{ socat_service_name }}
   fail:
     msg="Bailing out - this play requires 'socat_service_name'"
-  when: (socat_service_name)
+  when: socat_service_name is not defined
 
 - name: Variable check {{ socat_command }}
   fail:
     msg="Bailing out - this play requires 'socat_command'"
-  when: (socat_command)
+  when: socat_command is not defined
 
 - name: Install socat
   become: true
