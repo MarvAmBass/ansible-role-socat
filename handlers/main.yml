@@ -1,6 +1,6 @@
 ---
 
-- name: enable a systemd socat service
+- name: Enable a systemd socat service
   become: true
   systemd:
     daemon_reload: yes
