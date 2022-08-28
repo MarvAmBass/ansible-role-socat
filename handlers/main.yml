@@ -1,10 +1,10 @@
 ---
 
-- name: enable a systemd socat service
+- name: Enable a systemd socat service
   become: true
   systemd:
-    daemon_reload: yes
+    daemon_reload: true
     state: restarted
-    enabled: True
+    enabled: true
     name: "socat-{{ socat_service_name }}"
   listen: "installed socat"

@@ -15,7 +15,7 @@
     state: present
     pkg: socat
 
-- name: generate socat.service
+- name: Generate socat.service
   become: true
   template:
     src: socat.service.j2
