@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  namespace: MarvAmBass
+  role_name: linux_systemd_custom_socat
+  author: Marvin
+  description: Linux. Setup a systemd service with your custom socat command.
+  github_branch: master
+  license: BSD
+  min_ansible_version: "2.11"
+  platforms:
+    - name: 'Debian'
+      versions: ['all']
+  galaxy_tags:
+    - linux
+    - system
+    - systemd
+    - socat
+    - forwarding
+dependencies: []
+collections: []
+...
